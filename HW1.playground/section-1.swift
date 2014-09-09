@@ -2,7 +2,6 @@
 
 import UIKit
 
-
 let viewRect = CGRect(x: 0.0, y: 0.0, width: 320.0, height: 480.0)
 let view = UIView(frame: viewRect)
 view.setTranslatesAutoresizingMaskIntoConstraints(false)
@@ -11,9 +10,6 @@ view.backgroundColor = UIColor(red: 240.0/255.0, green: 230.0/255.0, blue: 242.0
 let greenView = UIView(frame: viewRect)
 greenView.setTranslatesAutoresizingMaskIntoConstraints(false)
 greenView.backgroundColor = UIColor(red: 0.3, green: 0.9, blue: 0.6, alpha: 1.0)
-
-
-
 
 let blueView = UIView(frame: CGRectZero)
 blueView.setTranslatesAutoresizingMaskIntoConstraints(false)
@@ -50,9 +46,7 @@ greenView.addConstraints([blueViewBottom, blueViewLeft, blueViewRight, blueViewT
 greenView.layoutIfNeeded()
 
 
-
 view.addSubview(greenView)
-
 
 let greenViewTop = NSLayoutConstraint(item: greenView, attribute: .Top, relatedBy: .Equal, toItem: view, attribute: .Top, multiplier: 1.0, constant: 20.0)
 let greenViewRight = NSLayoutConstraint(item: greenView, attribute: .Right, relatedBy: .Equal, toItem: view, attribute: .Right, multiplier: 1.0, constant: -16.0)
@@ -61,8 +55,4 @@ let greenViewLeft = NSLayoutConstraint(item: greenView, attribute: .Left, relate
 
 view.addConstraints([greenViewBottom, greenViewLeft, greenViewRight, greenViewTop])
 view.layoutIfNeeded()
-
 view
-
-
-
