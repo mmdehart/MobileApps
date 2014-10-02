@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  CodeOnly
 //
-//  Created by Madison DeHart on 9/29/14.
+//  Created by Madison DeHart on 9/18/14.
 //  Copyright (c) 2014 Madison DeHart. All rights reserved.
 //
 
@@ -18,12 +18,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         let screenRect = UIScreen.mainScreen().bounds
         window = UIWindow(frame: screenRect)
-        let navigationController = UINavigationController(nibName: nil, bundle: nil)
+        let navController = UINavigationController(nibName: nil, bundle: nil)
         let yellowViewController = YellowViewController(nibName: nil, bundle: nil)
-        navigationController.pushViewController(yellowViewController, animated: false)
-        window?.rootViewController = navigationController
+        navController.pushViewController(yellowViewController, animated: false)
+        window?.rootViewController = navController
         window?.makeKeyAndVisible()
         return true
     }
-    
 }
+

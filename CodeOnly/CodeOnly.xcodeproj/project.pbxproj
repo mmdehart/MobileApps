@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5CB2894419DA4B44006CACEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB2894319DA4B44006CACEA /* AppDelegate.swift */; };
-		5CB2894919DA4B44006CACEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CB2894719DA4B44006CACEA /* Main.storyboard */; };
 		5CB2894B19DA4B44006CACEA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CB2894A19DA4B44006CACEA /* Images.xcassets */; };
-		5CB2894E19DA4B44006CACEA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CB2894C19DA4B44006CACEA /* LaunchScreen.xib */; };
 		5CB2895A19DA4B44006CACEA /* CodeOnlyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB2895919DA4B44006CACEA /* CodeOnlyTests.swift */; };
 		5CB2896519DA4B6F006CACEA /* OrangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB2896419DA4B6F006CACEA /* OrangeViewController.swift */; };
 		5CB2896719DA4B7B006CACEA /* YellowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB2896619DA4B7B006CACEA /* YellowViewController.swift */; };
@@ -30,9 +28,7 @@
 		5CB2893E19DA4B44006CACEA /* CodeOnly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeOnly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CB2894219DA4B44006CACEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5CB2894319DA4B44006CACEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5CB2894819DA4B44006CACEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5CB2894A19DA4B44006CACEA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		5CB2894D19DA4B44006CACEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		5CB2895319DA4B44006CACEA /* CodeOnlyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodeOnlyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CB2895819DA4B44006CACEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5CB2895919DA4B44006CACEA /* CodeOnlyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeOnlyTests.swift; sourceTree = "<group>"; };
@@ -81,9 +77,7 @@
 			children = (
 				5CB2896319DA4B52006CACEA /* ViewControllers */,
 				5CB2894319DA4B44006CACEA /* AppDelegate.swift */,
-				5CB2894719DA4B44006CACEA /* Main.storyboard */,
 				5CB2894A19DA4B44006CACEA /* Images.xcassets */,
-				5CB2894C19DA4B44006CACEA /* LaunchScreen.xib */,
 				5CB2894119DA4B44006CACEA /* Supporting Files */,
 			);
 			path = CodeOnly;
@@ -203,8 +197,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CB2894919DA4B44006CACEA /* Main.storyboard in Resources */,
-				5CB2894E19DA4B44006CACEA /* LaunchScreen.xib in Resources */,
 				5CB2894B19DA4B44006CACEA /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -246,25 +238,6 @@
 			targetProxy = 5CB2895419DA4B44006CACEA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		5CB2894719DA4B44006CACEA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5CB2894819DA4B44006CACEA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		5CB2894C19DA4B44006CACEA /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5CB2894D19DA4B44006CACEA /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		5CB2895B19DA4B44006CACEA /* Debug */ = {
@@ -417,6 +390,7 @@
 				5CB2895F19DA4B44006CACEA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5CB2896019DA4B44006CACEA /* Build configuration list for PBXNativeTarget "CodeOnlyTests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +399,7 @@
 				5CB2896219DA4B44006CACEA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
