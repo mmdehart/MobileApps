@@ -23,8 +23,9 @@ class OrangeViewController: UIViewController {
     override func loadView() {
         view = UIView(frame: UIScreen.mainScreen().bounds)
         view.backgroundColor = UIColor.orangeColor()
-        /*
         displayLabel.setTranslatesAutoresizingMaskIntoConstraints(false)
+        
+        self.view.addSubview(displayLabel)
         
         let displayLabelCenterXConstraint = NSLayoutConstraint(item: displayLabel, attribute: .CenterX, relatedBy: .Equal, toItem: self.view, attribute: .CenterX, multiplier: 1.0, constant: 0.0)
         let displayLabelCenterYConstraint = NSLayoutConstraint(item: displayLabel, attribute: .CenterY, relatedBy: .Equal, toItem: self.view, attribute: .CenterY, multiplier: 1.0, constant: 0.0)
@@ -33,7 +34,7 @@ class OrangeViewController: UIViewController {
     }
     
     override func viewDidLoad() {
-        displayLabel.text = stringToDisplay*/
+        displayLabel.text = stringToDisplay
     }
     
 }
