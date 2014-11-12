@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="PickerThing" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qf7-3s-ct6">
+                                <rect key="frame" x="16" y="40" width="568" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qQ9-Qw-xfs">
+                                <rect key="frame" x="16" y="438" width="568" height="162"/>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Qf7-3s-ct6" secondAttribute="trailing" id="3x0-MZ-EJh"/>
+                            <constraint firstItem="qQ9-Qw-xfs" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="73p-oP-JQS"/>
+                            <constraint firstItem="Qf7-3s-ct6" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="TiM-xJ-m7d"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qQ9-Qw-xfs" secondAttribute="trailing" id="jds-nN-lBd"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="qQ9-Qw-xfs" secondAttribute="bottom" id="qZB-os-pS8"/>
+                            <constraint firstItem="Qf7-3s-ct6" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="yMH-fG-EgD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelForPicker" destination="Qf7-3s-ct6" id="3PP-VF-36B"/>
+                        <outlet property="pickerThing" destination="qQ9-Qw-xfs" id="Xty-19-M7X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
