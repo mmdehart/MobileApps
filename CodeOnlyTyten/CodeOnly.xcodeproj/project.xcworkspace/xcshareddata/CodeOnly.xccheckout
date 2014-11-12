@@ -12,20 +12,24 @@
 	<dict>
 		<key>3556892F3C8FAB0BB6CFEFB4FE58396AFE119174</key>
 		<string>github.com:tyten/FS2014.git</string>
+		<key>68F3E7CE1540F0B1DFF49855044F29307093C32E</key>
+		<string>https://github.com/mmdehart/MobileApps.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>CodeOnly/CodeOnly.xcodeproj</string>
+	<string>CodeOnlyTyten/CodeOnly.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>3556892F3C8FAB0BB6CFEFB4FE58396AFE119174</key>
+		<string>../../../../Class</string>
+		<key>68F3E7CE1540F0B1DFF49855044F29307093C32E</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>github.com:tyten/FS2014.git</string>
+	<string>https://github.com/mmdehart/MobileApps.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>3556892F3C8FAB0BB6CFEFB4FE58396AFE119174</string>
+	<string>68F3E7CE1540F0B1DFF49855044F29307093C32E</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -35,6 +39,14 @@
 			<string>3556892F3C8FAB0BB6CFEFB4FE58396AFE119174</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Class</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>68F3E7CE1540F0B1DFF49855044F29307093C32E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MobileApps</string>
 		</dict>
 	</array>
 </dict>
