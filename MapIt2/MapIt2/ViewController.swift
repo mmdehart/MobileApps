@@ -17,36 +17,42 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // from original project
-        //var latitude:CLLocationDegrees = 38.927246
-        //var longitude:CLLocationDegrees = -92.315984
-        //var latDelta:CLLocationDegrees = 0.03
-        //var lonDelta:CLLocationDegrees = 0.03
-        
         // this was added so we could get functions from the appdelegate
         let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
         
         // get the mapdata
         let mapData = appDelegate.getMapData()
         
-        //from original project
-        //var span:MKCoordinateSpan = MKCoordinateSpan(latitudeDelta:latDelta, longitudeDelta:lonDelta)
-        //var location:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
-        //var region:MKCoordinateRegion = MKCoordinateRegionMake(location, span)
-        // THE ABOVE CODE WAS REPLACED WITH THE CODE BELOW
+        
         var span:MKCoordinateSpan = MKCoordinateSpan(latitudeDelta:mapData.latDelta, longitudeDelta:mapData.lonDelta)
         var location:CLLocationCoordinate2D = CLLocationCoordinate2DMake(mapData.latitude, mapData.longitude)
         var region:MKCoordinateRegion = MKCoordinateRegionMake(location, span)
         
         mapView.setRegion(region, animated:true)
         
-        //Dale gave us these things
-        // its just things to put a pin at the location and a little popover when the pin is clicked.
-        var mapAnnotation = MKPointAnnotation()
-        mapAnnotation.coordinate = location
-        mapAnnotation.title = "Capen Park Area"
-        mapAnnotation.subtitle = "Rock Climbing!"
-        mapView.addAnnotation(mapAnnotation)
+        var homeAnnotation = MKPointAnnotation()
+        homeAnnotation.coordinate = mapData.homelocation
+        homeAnnotation.title = mapData.homeTitle
+        homeAnnotation.subtitle = mapData.homeSubTitle
+        mapView.addAnnotation(homeAnnotation)
+        
+        var soccerAnnotation = MKPointAnnotation()
+        soccerAnnotation.coordinate = mapData.soccerlocation
+        soccerAnnotation.title = mapData.soccerTitle
+        soccerAnnotation.subtitle = mapData.soccerSubTitle
+        mapView.addAnnotation(soccerAnnotation)
+        
+        var trumanAnnotation = MKPointAnnotation()
+        trumanAnnotation.coordinate = mapData.trumanlocation
+        trumanAnnotation.title = mapData.trumanTitle
+        trumanAnnotation.subtitle = mapData.trumanSubTitle
+        mapView.addAnnotation(trumanAnnotation)
+        
+        var lindAnnotation = MKPointAnnotation()
+        lindAnnotation.coordinate = mapData.lindlocation
+        lindAnnotation.title = mapData.lindTitle
+        lindAnnotation.subtitle = mapData.lindSubTitle
+        mapView.addAnnotation(lindAnnotation)
     }
 
     override func didReceiveMemoryWarning() {
@@ -56,11 +62,4 @@ class ViewController: UIViewController {
 
 
 }
-
-/*
-To be used in class:
-
-let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
-
-*/
 
